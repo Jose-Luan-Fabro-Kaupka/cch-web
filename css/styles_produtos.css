@@ -1,0 +1,21 @@
+body{
+    background-color: darksalmon;
+}
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+#texto_titulo{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 250%;
+}
+#produtos{
+    align-items: center;
+    margin-left: 2%;
+    margin-top: 4%;
+}
