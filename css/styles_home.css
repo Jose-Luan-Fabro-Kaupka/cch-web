@@ -1,5 +1,5 @@
 body{
-    background-color: cornflowerblue;
+    background-color: cadetblue;
 }
 
 a{
@@ -8,19 +8,6 @@ a{
 
 #nav-bar{
     margin: 0%;
-}
-
-#botaoh{
-    margin-right: -15%;
-}
-
-#botaop{
-    margin: 10%;
-}
-
-#inputp{
-    height: 10%;
-    margin-right: 4.5%;
 }
 
 #central{

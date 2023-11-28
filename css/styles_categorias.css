@@ -1,5 +1,5 @@
 body{
-    background-color: darkseagreen;
+    background-color: cadetblue;
 }
 
 a{
@@ -21,6 +21,7 @@ a{
 #texto_central{
     display: flex;
     flex-direction: column;
+    margin-top: 1%;
     color: white;
     font-size: 250%;
 }

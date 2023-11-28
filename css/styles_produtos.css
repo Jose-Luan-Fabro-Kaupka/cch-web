@@ -1,5 +1,9 @@
 body{
-    background-color: darksalmon;
+    background-color: cadetblue;
+}
+
+a{
+    text-decoration: none;
 }
 
 #nav-bar{
@@ -14,6 +18,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1%;
     width: 100%;
     height: auto;
 }
@@ -25,12 +30,14 @@ body{
     font-size: 250%;
 }
 
-#produtos{
+.card{
+    height: 22rem;
     align-items: center;
     margin-left: 2%;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
-.card{
-    size: 18rem;
+.card-img-top{
+    width: 14rem;
+    height: 14rem;
 }
