@@ -1,11 +1,26 @@
 body {
     background-color: cadetblue;
-    background-color: rgb(81, 100, 100);
+    background: linear-gradient(to bottom, rgb(81, 100, 100), #6dbb6d);
     margin: 0;
 }
 
 #nav-bar{
     margin: 0%;
+}
+
+#pagamento{
+    width: 75%;
+    min-height: 5px;
+    max-width: 700px;
+    padding: 45px 70px 45px 45px;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    position: relative;
+    font-size: 22px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all .3s;
 }
 
 .container {
@@ -26,15 +41,18 @@ body {
     background-color: aliceblue;
     border-radius: 10px;
     padding: 5%;
-    height: 15%;
+    height: 20%;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .compra {
     background-color: aliceblue;
     border-radius: 10px;
     padding: 5%;
-    height: 28%; 
+    height: 32%; 
     grid-column: 2;
     margin-top: 2%;
     display: flex;
@@ -43,18 +61,28 @@ body {
 }
 
 .imagem{
-    height: 100%;
-    width: auto;
+    height: 70%;
+    width: 50%;
 }
 
-.finalizar{
-    background-color: #4caf50;
+.remover{
+    background-color: red;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     align-self: center;
+}
+
+.finalizar{
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        align-self: center;
 }
 
 .finalizar:hover{
@@ -108,17 +136,3 @@ summary::-webkit-details-marker {
     display: none
 }
 
-#pagamento{
-    width: 75%;
-    min-height: 5px;
-    max-width: 700px;
-    padding: 45px 70px 45px 45px;
-    margin: 0 auto;
-    margin-bottom: 1%;
-    position: relative;
-    font-size: 22px;
-    border: 1px solid rgba(0,0,0,.1);
-    border-radius: 15px;
-    box-sizing: border-box;
-    transition: all .3s;
-}

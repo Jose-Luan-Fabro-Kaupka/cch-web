@@ -1,6 +1,6 @@
 body {
     font-family: "IBM Plex Sans", sans-serif;
-    background-color: rgb(81, 100, 100);
+    background: linear-gradient(to bottom, rgb(81, 100, 100), #6dbb6d);
   }
   
   #nav-bar{
