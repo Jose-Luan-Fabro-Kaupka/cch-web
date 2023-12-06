@@ -55,6 +55,42 @@
             <button class="add-to-cart">Adicionar ao Carrinho</button>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.add-to-cart').addEventListener('click', function() {
+                // Objeto do item a ser adicionado ao carrinho
+                const item = {
+                    nome: 'Suplemento 1',
+                    quantidade: 1
+                };
+
+                // Requisição para adicionar o item ao carrinho no arquivo JSON
+                fetch('./json/carrinho.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        // Adiciona o novo item ao array de itens no carrinho
+                        data.push(item);
+
+                        // Atualiza o arquivo JSON com o novo array de itens
+                        return fetch('./json/carrinho.json', {
+                            method: 'PUT', // Método de atualização de arquivo (pode variar dependendo do servidor)
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(data)
+                        });
+                    })
+                    .then(() => {
+                        // Ação após adicionar ao carrinho (pode ser redirecionamento ou mensagem de sucesso, etc.)
+                        alert('Item adicionado ao carrinho!');
+                    })
+                    .catch(error => {
+                        console.error('Erro ao adicionar ao carrinho:', error);
+                    });
+            });
+        });
+    </script>
     <style>
         
 
@@ -107,5 +143,6 @@
             background-color: #45a049;
         }
         </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
