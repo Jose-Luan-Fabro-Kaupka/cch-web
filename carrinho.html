@@ -54,17 +54,20 @@
         <div class="produtos">
             <div class="produto">
                 <img src="img/sela1.png" alt="sela_freio_de_ouro" class="imagem">
-                Sela freio de ouro, Valor: R$800,00
+                <p>Sela freio de ouro, Valor: R$800,00</p>
+                <button class="remover" onclick="remover(this)">Remover do carrinho</button>
             </div>
     
             <div class="produto">
                 <img src="img/suplemento2.png" alt="sela_freio_de_ouro" class="imagem">
-                Suplemento Horse Mais, Valor: R$80,00
+                <p>Suplemento Horse Mais, Valor: R$80,00</p>
+                <button class="remover" onclick="remover(this)">Remover do carrinho</button>
             </div>
     
             <div class="produto">
-                    <img src="img/racao1.png" alt="sela_freio_de_ouro" class="imagem">
-                    Ração Agrozacca, Valor: R$220,00
+                <img src="img/racao1.png" alt="sela_freio_de_ouro" class="imagem">
+                <p>Ração Agrozacca, Valor: R$220,00</p>
+                <button class="remover" onclick="remover(this)">Remover do carrinho</button>
             </div>
         </div>
     
@@ -89,5 +92,11 @@
             <button class="finalizar">Finalizar compra</button>
         </div>
     </div>
+    <script>
+        function remover(item){
+            var produto = item.parentNode;
+            produto.remove();
+        }
+    </script>
 </body>
 </html>
